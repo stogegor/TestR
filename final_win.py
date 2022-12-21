@@ -7,7 +7,7 @@ class Mainwin(QWidget):
         super().__init__()
         self.set_appear()
         self.initUI()
-        self.connects()
+        self.result()
         self.show()
     def set_appear(self):
         self.setWindowTitle(txt_title)
@@ -15,5 +15,5 @@ class Mainwin(QWidget):
         self.move(win_x, win_y)
     def initUI(self):
         pass
-    def connects(self):
+    def result(self):
         pass

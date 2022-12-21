@@ -14,6 +14,7 @@ class Mainwin(QWidget):
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
     def initUI(self):
-        pass
+        self.work_text = QLabel(txt_workheart)
+        self.index_text = QLabel(txt_index)
     def result(self):
-        pass
+        index = (4*(int(self.exp.t1)+int(self.exp.t2)+int(self.exp.t3))-200)/10

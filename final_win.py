@@ -7,13 +7,14 @@ class Mainwin(QWidget):
         super().__init__()
         self.set_appear()
         self.initUI()
-        self.connects()
+        self.result()
         self.show()
     def set_appear(self):
         self.setWindowTitle(txt_title)
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
     def initUI(self):
-        pass
-    def connects(self):
-        pass
+        self.work_text = QLabel(txt_workheart)
+        self.index_text = QLabel(txt_index)
+    def result(self):
+        index = (4*(int(self.exp.t1)+int(self.exp.t2)+int(self.exp.t3))-200)/10
